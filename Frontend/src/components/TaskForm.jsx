@@ -18,7 +18,6 @@ const TaskForm = () => {
 
     setError('');
     try {
-      // Estado inicial: false (pendiente)
       await postTarea(titulo, false, prioridad);
       setTitulo('');
       setPrioridad('Media');
@@ -31,7 +30,7 @@ const TaskForm = () => {
     <div className="bg-gray-50/70 rounded-2xl p-5 mb-8 border border-gray-200/80 shadow-sm">
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 items-end">
         <div className="flex-1 w-full">
-          <label htmlFor="tituloInput" className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 mb-1">
             <i className="fas fa-pencil-alt text-gray-400 mr-1"></i> Título
           </label>
           <input
@@ -54,7 +53,7 @@ const TaskForm = () => {
         </div>
         
         <div className="w-full md:w-48">
-          <label htmlFor="prioridadSelect" className="block text-sm font-medium text-gray-700 mb-1">
+          <label className="block text-sm font-medium text-gray-700 mb-1">
             <i className="fas fa-flag text-gray-400 mr-1"></i> Prioridad
           </label>
           <select

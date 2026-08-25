@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+.delete-btn {
+  background-color: #f3f4f6;
+  color: #ef4444;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #fecaca;
+  color: #dc2626;
+  transform: scale(1.1);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+.delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-btn-outline {
+  background-color: white;
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  transition: all 0.2s ease;
+}
+
+.delete-btn-outline:hover {
+  background-color: #ef4444;
+  color: white;
+  transform: scale(1.1);
+}

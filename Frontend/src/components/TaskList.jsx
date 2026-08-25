@@ -1,7 +1,7 @@
 import React from 'react';
 import TaskItem from './TaskItem';
 
-const TaskList = ({ tasks }) => {
+const TaskList = ({ tasks, onDelete }) => {
   if (!tasks || tasks.length === 0) {
     return (
       <div className="text-center py-12 text-gray-400 bg-gray-50/50 rounded-2xl border border-dashed border-gray-300">
@@ -23,7 +23,8 @@ const TaskList = ({ tasks }) => {
   return (
     <div className="space-y-3">
       {sortedTasks.map(task => (
-        <TaskItem key={task.id} task={task} />
+        <TaskItem key={task.id} task={task}
+        onDelete={onDelete} />
       ))}
     </div>
   );

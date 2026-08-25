@@ -24,9 +24,6 @@ const TasksPage = () => {
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-3xl font-bold text-gray-800 flex items-center gap-3">
             <i className="fas fa-list-check text-blue-600"></i> Tareas
-            <span className="text-sm font-normal text-gray-400 ml-2">
-              · prioridad y estado
-            </span>
           </h1>
         </div>
 
